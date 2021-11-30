@@ -1,0 +1,139 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'ABeeZee';
+    font-weight: bold;
+    background-color: #ccc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #aaa;
+    padding: 5px 80px;
+    background-color: #fff;
+}
+
+.left  a {
+    text-decoration: none;
+}
+
+.left {
+    display: flex;
+}
+
+.left > .zoom > a{
+    font-size: 50px;
+    color: #0E71EB;
+    
+}
+
+.left > .links {
+    display: flex;
+    align-items: center;
+}
+
+.left > .links>.child {
+    padding-left: 30px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.left > .links>.child > a{
+    color: rgb(165, 160, 160);
+}
+
+.left > .links>.child:hover > .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    text-transform: capitalize; 
+    font-weight: normal;
+    position: absolute;
+    border: 1px solid #aaa;
+    padding: 0 10px;
+    background-color: #fff;
+}
+
+.dropdown > .dd-elements {
+    padding: 5px 0;
+
+}
+
+.dropdown > .dd-elements > a {
+    color: black;
+    
+
+}
+
+.dropdown > .dd-elements > a:hover {
+    color: #0E71EB;
+
+}
+
+.left > .links>.child > a:hover {
+    color: #0E71EB;
+}
+
+.right {
+    display: flex;
+}
+
+.right a{
+    text-decoration: none;
+}
+
+.right > .linkss {
+    display: flex;
+    color: #0E71EB;
+}
+.right > .linkss > .child > a {
+    color: #0E71EB;
+    padding-left: 30px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.right > .linkss > .child:hover > .dropdown2{
+    display: block;
+}
+
+.dropdown2 {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    padding: 10px 10px;
+    position: absolute;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #000;
+    display: none;
+}
+
+.dropdown2 > .dd-elements2 {
+    padding: 10px ;
+}
+
+.dropdown2 > .dd-elements2 > a{
+    padding: 10px;
+}
+
+.dropdown2 > .dd-elements2 > a:hover {
+    background-color: #0E71EB;
+}
+
+.btn > a{
+    text-transform: uppercase;
+    background-color: #f26d21;
+    border-radius: 10px;
+    padding: 8px 15px;
+    margin-left: 30px;
+    color: #fff;
+}
+
+.btn > a:hover {
+    background-color: #db5304;
+}
