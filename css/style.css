@@ -2,8 +2,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'ABeeZee';
-    font-weight: bold;
-    background-color: #ccc;
+    font-weight: 600;
+    background-color: rgb(250, 245, 245);
 }
 
 nav {
@@ -13,6 +13,9 @@ nav {
     border: 1px solid #aaa;
     padding: 5px 80px;
     background-color: #fff;
+    /* position: sticky; */
+    /* width: 100%; */
+    /* margin: 0; */
 }
 
 .left  a {
@@ -104,7 +107,7 @@ nav {
 .dropdown2 {
     background-color: #fff;
     border: 1px solid #aaa;
-    padding: 10px 10px;
+    padding: 5px 0px;
     position: absolute;
     border-radius: 10px;
     font-size: 15px;
@@ -114,15 +117,74 @@ nav {
 }
 
 .dropdown2 > .dd-elements2 {
-    padding: 10px ;
+    padding: 10px 0;
 }
 
 .dropdown2 > .dd-elements2 > a{
     padding: 10px;
+    color: #000;
 }
 
 .dropdown2 > .dd-elements2 > a:hover {
     background-color: #0E71EB;
+    color: #fff;
+}
+
+.mini {
+    display: none;
+    color: #0E71EB;
+    padding-left: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    /* padding: 0 20px; */
+}
+
+.mini > div {
+    padding: 0 15px;
+}
+
+.dd {
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    /* top: auto; */
+    background-color: #eee;
+    transition: 1s ease-in-out;
+    z-index: -1;
+}
+
+.dd > .childd {
+    color: rgb(51, 50, 50);
+    font-weight: 300;
+    font-size: small;
+    padding: 10px;
+    border-bottom: 1px solid rgb(197, 193, 193);
+}
+
+.dd2 {
+    display: none;
+}
+
+.dd2 > .child2 {
+    font-weight: normal;
+    padding: 10px;
+    border-bottom: 1px solid rgb(197, 193, 193);
+}
+
+.dd3 {
+    display: none;
+}
+
+.dd3 > .child3 {
+    font-weight: normal;
+    padding: 10px;
+    border-bottom: 1px solid rgb(197, 193, 193);
+}
+
+.dd > .ss {
+    display: flex;
+    justify-content: space-between;
 }
 
 .btn > a{
@@ -136,4 +198,41 @@ nav {
 
 .btn > a:hover {
     background-color: #db5304;
+}
+
+@media (max-width:1040px) {
+    nav {
+        padding: 5px 10px;
+    }
+    .left > .links>.child{
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 1020px) {   
+    .left>.links>.child:nth-child(2){
+        display: none;
+    }
+}
+
+@media (max-width: 915px) {
+    .left>.links>.child:nth-child(3){
+        display: none;
+    }    
+}
+
+@media (max-width: 800px) {
+    .left>.links {
+        display: none;
+    }
+    .right > .linkss {
+        display: none;
+    }
+    .right > .btn {
+        display: none;
+    }
+    .right > .mini {
+        display: flex;
+    }
+    
 }
